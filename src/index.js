@@ -20,7 +20,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
-import TodoApp from './components/TodoApp';
+import TodoApp from './components/List';
 import store from './store/store';
 import './index.css';
 

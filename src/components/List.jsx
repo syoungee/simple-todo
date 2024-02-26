@@ -30,7 +30,7 @@ const TodoApp = () => {
       <div className="m-2">
         <input type="text" value={newTodo} onChange={(e) => setNewTodo(e.target.value)} className="border p-2 mr-2" />
         <button onClick={handleAddTodo} className="bg-blue-500 text-white p-2 rounded hover:bg-blue-700">
-          Add Todo
+          Add
         </button>
       </div>
       <ul>

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { addTodo, toggleTodo, deleteTodo } from '../reducers/actions';
-import { MdDeleteForever } from 'react-icons/md';
+import Todo from './Todo';
 
 const TodoApp = () => {
   const todos = useSelector((state) => state.todos);
@@ -35,15 +35,7 @@ const TodoApp = () => {
       </div>
       <ul>
         {todos.map((todo) => (
-          <li
-            key={todo.id}
-            className="flex items-center bg-gray-200 p-2 rounded mb-2 m-2" // Tailwind CSS 클래스 추가
-            style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}
-            onClick={() => handleToggleTodo(todo.id)}
-          >
-            <span className="flex-grow">{todo.text}</span>
-            <MdDeleteForever className="text-grey-500 cursor-pointer" onClick={() => handleDeleteTodo(todo.id)} />
-          </li>
+          <Todo todo={todo} handleToggleTodo={handleToggleTodo} handleDeleteTodo={handleDeleteTodo}></Todo>
         ))}
       </ul>
     </div>

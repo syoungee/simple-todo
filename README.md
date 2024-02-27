@@ -7,7 +7,8 @@ https://tangerine-douhua-119a3d.netlify.app/
 ## 1~5 답변
 
 1. DOM과 Virtual DOM을 설명해주세요.<br/>
-`우선 DOM은 Document Object Model의 약자로 HTML문서의 구조적인 표현이다. 웹페이지의 실제 구조이다. 반면 Virtual DOM은 react와 같은 JS 라이브러리가 관리하는 Real DOM의 가상 표현이다. React는 Vurtual DOM의 상태 변경을 업데이트한 다음 React DOM과 동기화한다. Virtual DOM의 성능이 더 빠른 것은 처리 속도 자체가 빨라지는 것이 아니라 변경된 정보의 양이 적기 때문이다. 전체 페이지를 업데이트하는 데 시간을 낭비하지 않고 필요한 업데이트가 필요한 부분만을 상호 작용한다.`
+> 우선 DOM은 Document Object Model의 약자로 HTML문서의 구조적인 표현이다. 웹페이지의 실제 구조이다. 반면 Virtual DOM은 react와 같은 JS 라이브러리가 관리하는 Real DOM의 가상 표현이다. React는 Vurtual DOM의 상태 변경을 업데이트한 다음 React DOM과 동기화한다. Virtual DOM의 성능이 더 빠른 것은 처리 속도 자체가 빨라지는 것이 아니라 변경된 정보의 양이 적기 때문이다. 전체 페이지를 업데이트하는 데 시간을 낭비하지 않고 필요한 업데이트가 필요한 부분만을 상호 작용한다.
+
 
 2.리액트의 특징을 설명해주세요.<br/>
 `react는 UI를 만들기 위한 js library(재사용이 용이한 컴포넌트 단위로 UI를 구현해 나간다.), 웹, 모바일, 데스크탑 어플리케이션 3가지 모두 구현 가능하다. SPA(single page application)-페이지 내에서 네비게이션 하면서 다양한 페이지를 볼 수 있음 CSR(client side rendering)-클라이언트 사이드에서 렌더링을 해주는 방식, 웹의 경우 브라우저가 보통 렌더링을 해준다. 사용자 경험 즉 사용자 별 데이터를 다루는 데 유리하다.`
